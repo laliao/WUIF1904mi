@@ -1,0 +1,334 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+body{
+    background-color: #F5F5F5;
+}
+a{text-decoration: none;}
+
+/* 手机段样式开始*/
+.shouji{
+    width:1226px;
+    height:auto;
+    background-color:#F5F5F5;
+    margin:0 auto;
+}
+.shouji .top{
+    height:58px;
+    line-height:58px;
+    font-size:16px;
+}
+.shouji .top .right{
+    float: right;
+}
+.shouji .top .right:hover{
+    color:#ff6700;
+}
+.shouji .bottom{
+    height:614px;
+
+}
+.shouji .bottom .box{
+    height:300px;
+    width:234px;
+    float:left;
+    margin:0px 14px 14px 0px;
+    background-color:white;
+}
+.shouji .bottom .boxr{
+    margin-right:0;
+}
+.shouji .bottom .boxb{
+    margin-bottom:0;
+}
+.shouji .bottom .box1{
+    height:614px;
+}
+.shouji .bottom .box .text1{
+    height:20px;
+    width:64px;
+    margin:0 auto;
+    background-color:#83C44E;
+    text-align: center;
+    line-height: 20px;
+    font-size:12px;
+    color:white;   
+}
+.shouji .bottom .box a{
+    display:block;
+}
+.shouji .bottom .box img{
+    display:block;
+    margin:0 auto 10px;
+
+}
+.shouji .bottom .box .text2{
+    height:21px;
+    width:214px;
+    text-align: center;
+    line-height: 21px;
+    font-size:14px;
+    color: #333333;
+    margin:0 auto;
+}
+.shouji .bottom .box .text3{
+    height:18px;
+    width:214px;
+    text-align: center;
+    line-height: 18px;
+    font-size:12px;
+    color: #b0b0b0;
+    margin:2px auto;
+}
+.shouji .bottom .box .text4{
+    height:16px;
+    margin:15px auto 0px;
+    text-align: center;
+    line-height: 16px;
+    font-size:14px;
+    color:#ff6700;
+}
+.shouji .bottom .box .text4 s{
+    color:#b0b0b0;
+}
+
+/*手机段样式结束*/
+
+
+
+.jiadian{
+    width:1226px;
+    height:auto;
+    margin:0 auto;
+    background-color:#F5F5F5;
+}
+.jiadian .top{
+    height:58px;
+    line-height: 58px;
+    font-size:20px;
+}
+.jiadian .top .left{
+    float:left;
+}
+.jiadian .top .right{
+    float:right;
+}
+/*.jiadian .top .right:hover{
+    color:#ff6700;
+    border-bottom:2px solid #ff6700;
+    padding-bottom:2px;
+    cursor:pointer;
+}*/
+.jiadian .top .right span{
+    margin-left:30px;   
+}
+.jiadian .top .right span:hover{
+    color:#ff6700;
+    border-bottom:2px solid #ff6700;
+    padding-bottom:2px;
+    cursor:pointer;   
+}
+.jiadian .bottom{
+    height:614px;
+}
+.jiadian .bottom .left{
+    width:234px;
+    height:100%;
+    float:left;
+}
+.jiadian .bottom .left a{
+    display:block;
+    width:234px;
+    height:300px;
+}
+.jiadian .bottom .left .li2{
+   margin-top:14px;
+}
+
+.jiadian .bottom .right{
+    width:992px;
+    height:100%;
+    float:right;
+}
+.jiadian .bottom .right li{
+    width:234px;
+    height:300px;
+    background-color:#fff;
+    float:left;
+    margin-left:14px;
+    margin-bottom:14px;
+}
+.jiadian .bottom .right .boxb{
+    margin-bottom:0px;
+}
+.jiadian .bottom .right .boxr{
+    height:143px;
+}
+.jiadian .bottom .right .boxr2{
+    margin-top:14px;
+}
+
+.jiadian .bottom .right .box a{
+    display:block;
+    width:100%;
+    height:auto;
+    overflow:hidden;
+}
+.jiadian .bottom .right .box .text1{
+    height:20px;
+    width:64px;
+    background-color:#83C44E;
+    text-align: center;
+    line-height: 20px;
+    font-size:12px;
+    color:white;
+    margin:0 auto;
+}
+.jiadian .bottom .right .box .tu{
+   display:block;
+    margin:15px auto 20px;
+}
+.jiadian .bottom .right .box .text2{
+    height:21px;
+    width:214px;
+    text-align: center;
+    line-height: 21px;
+    font-size:14px;
+    color: #333333;
+    margin:0 auto;
+}
+.jiadian .bottom .right .box .text3{
+    height:18px;
+    width:214px;
+    text-align: center;
+    line-height: 18px;
+    font-size:12px;
+    color: #b0b0b0;
+    margin:1px auto;
+}
+.jiadian .bottom .right .box .text4{
+    height:16px;
+    margin:10px auto 0px;
+    text-align: center;
+    line-height: 16px;
+    font-size:14px;
+    color:#ff6700;
+}
+.jiadian .bottom .right .box .text4 s{
+    color:#b0b0b0;
+}
+.jiadian .bottom .right .boxd img{
+    display:block;
+    float:right;
+    margin:30px 10px;
+}
+.jiadian .bottom .right .boxd .leftp{
+   height:42px;
+   width: 94px;
+   margin:40px 10px 0  30px;
+
+}
+.jiadian .bottom .right .boxd .leftp p{
+    color:#333333;
+    font-size:14px;
+    padding-bottom:10px;
+}
+.jiadian .bottom .right .boxd .leftp pre{
+    color:#ff6700;
+    font-size:14px;
+}
+
+.jiadian .bottom .right .boxd2 img{
+    display:block;
+    float:right;
+    margin:40px 10px;
+}
+.jiadian .bottom .right .boxd2 .leftp{
+   height:42px;
+   width: 94px;
+   margin:50px 10px 0  30px;
+
+}
+.jiadian .bottom .right .boxd2 .leftp p{
+    color:#333333;
+    font-size:14px;
+}
+.jiadian .bottom .right .boxd2 .leftp pre{
+    color:#b0b0b0;
+    font-size:12px;
+}
+.Centu{
+    display:block;
+    margin:45px auto 20px;
+
+}
+
+.rep{
+    margin:0 auto;
+    width:1226px;
+    height:auto;
+    overflow: hidden;
+}
+.rep .top{
+    height:58px;
+    font-size:20px;
+    line-height: 58px;
+}
+
+.rep .bottom .box{
+    height:415px;
+    width:296px;
+    background-color:white;
+    float:left;
+    margin-right:14px;
+}
+.rep .bottom .boxr{
+    margin-right:0px;  
+}
+.rep .bottom .box a{
+    height:auto;
+    display:block;
+    margin:0 auto;
+}
+.rep .bottom .box img{
+    display:block;
+}
+.rep .bottom .box .text1{
+    height:72px;
+    width:240px;
+    margin:30px auto 20px;
+    font-size:14px;
+    color:#333333;
+}
+.rep .bottom .box .text2{
+    height:18px;
+    width:240px;
+    margin:0px auto 8px;
+    font-size:12px;
+    color:#b0b0b0;
+}
+.rep .bottom .box .bb{
+    height:16px;
+    width:240px;
+    margin:0px auto;
+}
+
+.rep .bottom .box .text3{
+    line-height:16px;
+    font-size:14px;
+    color:#333;
+}
+.rep .bottom .box .text4{
+    line-height:16px;
+    font-size:14px;
+    color:#ff6700;
+}
+
+
+
+
+
+
+
