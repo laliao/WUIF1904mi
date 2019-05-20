@@ -330,7 +330,7 @@ body{background-color: #F5F5F5;}
     font-size:14px;
     color:#ff6700;
 }
-
+/*内容样式*/
 .neir{
     margin:14px auto;
     width:1226px;
@@ -348,7 +348,144 @@ body{background-color: #F5F5F5;}
     background-color:white;
     float:left;
     margin-right:14px;
+    box-sizing:border-box;
 }
+.neir .bottom .box p{
+    height:70px;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding-top:30px;
+    text-align: center;
+    color:#ff6700;
+}
+.neir .bottom .box .centi{
+    height:350px;
+    width:296px;
+    position: relative;
+}
+.neir .bottom .box .centi .ti{
+    position: absolute;
+    top:0px;
+    left:0;
+    height:350px;
+    width:296px;
+    background-color: white;
+}
+.neir .bottom .box .centi a{
+    display:block;
+}
+.neir .bottom .box .centi a:hover{
+    cursor: pointer;
+}
+
+
+.neir .bottom .box .centi .ti p{
+    line-height:25px;
+    text-align: center;
+    font-size: 20px;
+    color:#333;
+    height:25px;
+    width:auto;
+    margin:-25px 25px 5px;
+   /* position: relative;
+    top:-20px;
+    left:0px;*/
+}
+.neir .bottom .box .centi .ti .xx{
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;  
+    height:40px;
+    width:200px;
+    color:#b0b0b0; 
+    display:block;
+}
+
+
+.neir .bottom .box .centi .ti span{
+    display:block;
+    font-size: 12px;
+    color:#333;
+    height:18px;
+    text-align: center;
+    line-height: 18px;
+    margin:25px auto 20px;
+  /*  position: relative;
+    top:20px;
+    left:0px;*/
+}
+
+
+
+
+.neir .bottom .box .centi .ti img{
+    display:block;
+    height:140px;
+    width:216px;
+    margin:0 40px;
+}
+
+.neir .bottom .box .centi .ti .anniu{
+    border:1px solid #ffac13;
+    background: #fff;
+    color: #ffac13;
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+    margin-left:88px;
+
+}
+.neir .bottom .box .centi .ti .anniu:hover{
+    background: #ffac13;
+    color:#fff ;
+}
+
+.neir .bottom .box .centi .dian{
+    height:30px;
+    width:90px;
+    position: absolute;
+    bottom:20px;
+    left:0px;
+    right:0px;
+    margin:auto;
+    box-sizing: border-box;
+}
+.neir .bottom .box .centi .dian a{
+    height:6px;
+    width:6px;
+    border:2px solid white;
+    display:block;
+    border-radius: 50%;
+    background-color: #B0B0B0;
+    float:left;
+    margin:10px 10px;  
+}
+.neir .bottom .box .leftj{
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin:auto 0;
+    left:0;
+    width:20px;
+    height:48px;
+    background-color:#ff6700;
+}
+.neir .bottom .box .rightj{
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin:auto 0;
+    right:0;
+    width:20px;
+    height:48px;
+    background-color:#ff6700;
+}
+.neir .bottom .box1 .centi .dian a:hover{
+    background-color: #ff6700;
+}
+
 .neir .bottom .boxr{
     margin-right:0px;  
 }
@@ -481,15 +618,93 @@ body{background-color: #F5F5F5;}
     width:1226px;
     height:460px;
     margin:0 auto;
-    background-color:blue;
     margin-bottom:14px;
+    position:relative;
+}
+.lunb .imgbox{
+    width:1226px;
+    height:460px;
+    margin:0 auto;
+}
+.lunb .imgbox a{
+    display:block;
+    width:1226px;
+    height:460px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.lunb .imgbox img{
+    height:460px;
+    width:1226px;
 }
 .lunb .left{
     width:234px;
-    height:auto;
-    float:left;
-    background-color:red;
+    height:460px;
+    background-color:rgba(0,0,0,0.6);
+    position:absolute;
+    top:0;
+    left:0;
+    padding-top:20px;
+    box-sizing: border-box;
+
 }
+.lunb .left a{
+    display:block;
+    cursor: pointer;
+    width:auto;
+    height:42px;
+    line-height: 42px;
+    padding-left:30px;
+    font-size:15px;  
+    color:white;
+    position:relative;
+}
+.lunb .left a:hover{
+    background-color: #ff6700;
+}
+.lunb .lbtn{
+    width:41px;
+    height:69px;
+    background-color: #83C44E;
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    left:234px;
+}
+.lunb .rbtn{
+    width:41px;
+    height:69px;
+    background-color: #83C44E;
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    right:0px;
+}
+.lunb .dian{
+    width:100px;
+    height:10px;
+    position:absolute;
+    right:30px;
+    bottom:30px;
+}
+.lunb .dian a{
+    display:block;
+    width:6px;
+    height:6px;
+    border:2px solid #929398;
+    margin:auto 5px;
+    background-color: #8C8E97;
+    border-radius: 50%;
+    float:left;
+}
+.lunb .dian a:hover{
+    background-color: rgba(243,244,244,0.8);
+    border:2px solid #8C8E97;
+}
+
 /*轮播下开始*/
 .lbx{
     height:170px;
@@ -561,6 +776,7 @@ body{background-color: #F5F5F5;}
 }
 .ship .bottom .box p:hover{
     color:#ff6700;
+    cursor: pointer;
 }
 .ship .bottom .box pre{
     color:#b0b0b0;
@@ -652,6 +868,7 @@ body{background-color: #F5F5F5;}
     font-size: 12px;
     text-align: center;
     color: #616161;
+    margin-top:10px;
 }
 .weix .bottom .right .box .kefu{
     width:118px;
@@ -661,7 +878,7 @@ body{background-color: #F5F5F5;}
     line-height:28px;
     border:1px solid #ff6700;
     color: #ff6700;  
-    margin:16px auto 0;
+    margin:15px auto 0;
 }
 .weix .bottom .right .box .kefu:hover{
     color:#fff;
