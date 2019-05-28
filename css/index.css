@@ -91,7 +91,10 @@ body{background-color: #F5F5F5;}
     line-height: 18px;
     font-size:12px;
     color: #b0b0b0;
-    margin:2px auto;
+    margin:2px 10px 10px;
+    white-space:nowrap;  
+    overflow:hidden;     
+    text-overflow:ellipsis;
 }
 .shouji .bottom .box .text4{
     height:16px;
@@ -231,6 +234,9 @@ body{background-color: #F5F5F5;}
     font-size:12px;
     color:white;
     margin:0 auto;
+    white-space:nowrap;  
+    overflow:hidden;    
+    text-overflow:ellipsis; 
 }
 .jiadian .bottom .right .box .tu{
    display:block;
@@ -244,6 +250,9 @@ body{background-color: #F5F5F5;}
     font-size:14px;
     color: #333333;
     margin:0 auto;
+    white-space:nowrap;  
+    overflow:hidden;    
+    text-overflow:ellipsis; 
 }
 .jiadian .bottom .right .box .text3{
     height:18px;
@@ -253,6 +262,9 @@ body{background-color: #F5F5F5;}
     font-size:12px;
     color: #b0b0b0;
     margin:1px auto;
+    white-space:nowrap;  
+    overflow:hidden;    
+    text-overflow:ellipsis; 
 }
 .jiadian .bottom .right .box .text4{
     height:16px;
@@ -261,6 +273,9 @@ body{background-color: #F5F5F5;}
     line-height: 16px;
     font-size:14px;
     color:#ff6700;
+    white-space:nowrap;  
+    overflow:hidden;    
+    text-overflow:ellipsis; 
 }
 .jiadian .bottom .right .box .text4 s{
     color:#b0b0b0;
@@ -304,6 +319,7 @@ body{background-color: #F5F5F5;}
 .jiadian .bottom .right .boxd2 .leftp pre{
     color:#b0b0b0;
     font-size:12px;
+    margin-top:6px;
 }
 .Centu{
     display:block;
@@ -353,6 +369,12 @@ body{background-color: #F5F5F5;}
     margin:30px auto 20px;
     font-size:14px;
     color:#333333;
+
+    display:-webkit-box;  
+-webkit-box-orient:vertical;  
+-webkit-line-clamp:3;  
+overflow:hidden;   
+text-overflow:ellipsis; 
 }
 .rep .bottom .box .text2{
     height:18px;
@@ -689,10 +711,13 @@ body{background-color: #F5F5F5;}
     float:right;
     background-color:transparent;
 }
+.logo .search:hover .sous,.logo .search:hover .btn{
+    border-color:#b0b0b0;
+}
 .logo .search .sous,.logo .search .btn{
     box-sizing: border-box;
     outline: 0;
-    border:1px solid #b0b0b0;
+    border:1px solid #E0E0E0;
     display:block;
     float:right;
     background-color:transparent;
@@ -700,13 +725,12 @@ body{background-color: #F5F5F5;}
 .logo .search .btn{
     width:52px;
     height:50px;
-    border-left:0;
 }
 .logo .search .btn .icon-sousuo{
     color:#616161;
 }
 
-.logo .search .btn:hover{background-color: #ff6700;}
+.logo .search .btn:hover{background-color: #ff6700;border-color:#ff6700;}
 .logo .search .btn:hover .icon-sousuo{
  color:white;
 }
@@ -715,6 +739,7 @@ body{background-color: #F5F5F5;}
     width:244px;
     height:50px;
     text-indent: 1em;
+    border-right:0;
 }
 
 /*轮播开始*/
@@ -745,7 +770,7 @@ body{background-color: #F5F5F5;}
 .lunb .left{
     width:234px;
     height:460px;
-    background-color:rgba(0,0,0,0.6);
+    background-color:rgba(0,0,0,0.5);
     position:absolute;
     top:0;
     left:0;
@@ -867,23 +892,33 @@ body{background-color: #F5F5F5;}
     float: left;
     width: 70px;
     height: 82px;
-    padding: 0 3px;
+    margin: 0 3px ;
     background: #5f5750;
     box-sizing: border-box;
-    border-right:1px solid #665e57;
-    border-bottom:1px solid #665e57;
+    position: relative;
+   /* border-bottom:1px solid #665e57;*/
+ 
 }
 .lbx .left li a{
     display: block;
-    padding-top: 18px;
-    width:64px;
-    height:50px;
+    margin:12px auto 0;
+    width:70px;
+    height:64px;
     font-size:12px;
     color:rgba(255,255,255,0.7);
     text-align: center;
+    border-right:1px solid #665e57;
 }
 .lbx .left li a:hover{
     color:#fff;
+}
+.lbx .left li .tiao{
+    position: absolute;
+    left:2px;
+    bottom:0px;
+    height:1px;
+    width:64px;
+    background-color:#665e57;
 }
 
 .lbx .left li .iconfont{
@@ -1039,18 +1074,37 @@ body{background-color: #F5F5F5;}
 .weix .top li{
     height:25px;
     width:244px;
-    margin-top:27px;
-    font-size:16px;
-    color:#333;
-    text-align: center;
-    line-height: 25px;
     border-right:1px solid #E0E0E0;
+    box-sizing:border-box;
     float:left;
+    margin-top:27px;
 }
-.weix .top li a:hover{
+.weix .top li a{
+    display:block;
+    height:25px;
+    width:146px;
+    margin:0 auto;
+}
+.weix .top li .iconfont{
+    font-size:25px;
+    color:#616161;
+    display:block;
+    float:left;
+    margin-right:8px;
+}
+.weix .top li span{
+    line-height: 25px;
+    display:block;
+    float:left;
+    height:25px;
+    font-size:16px;
+    color:#616161;
+}
+.weix .top li a:hover span,.weix .top li a:hover .iconfont{
     color:#ff6700;
     cursor: pointer;
 }
+
 .weix .bottom{
     height:192px;
     width:1226px;
