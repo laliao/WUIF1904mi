@@ -362,6 +362,7 @@ body{background-color: #F5F5F5;}
     width: 992px;
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+    z-index:200;
 }
 
 .lunb .left li .content .children-list {
@@ -718,11 +719,18 @@ body{background-color: #F5F5F5;}
 .jiadian .bottom .left .li2{
    margin-top:14px;
 }
-
-.jiadian .bottom .right{
+.jiadian .bottom .rightbox{
     width:992px;
     height:100%;
     float:right;
+    position: relative;
+}
+.jiadian .bottom .right{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
 }
 .jiadian .bottom .right li{
     width:234px;
@@ -884,6 +892,126 @@ body{background-color: #F5F5F5;}
     margin:45px auto 20px;
 
 }
+/*为你推荐*/
+.jiadian .bottom .right1box{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    position: relative;
+}
+.jiadian .bottom .right1{
+    width:100%;
+    height:auto;
+    position: absolute;
+    top:0;
+    left:0;
+
+
+}
+.jiadian .bottom .right1 li{
+    width:234px;
+    height:300px;
+    background-color:#fff;
+    float:left;
+    margin-left:14px;
+    margin-bottom:14px;
+    position: relative;
+    overflow: hidden;
+
+}
+.jiadian .bottom .right1 li:hover{
+    transform:translateY(-3px);
+    transition:1s;
+    box-shadow:0 0 25px 1px #ccc;
+
+}
+.jiadian .bottom .right1 .boxb{
+    margin-bottom:0px;
+}
+.jiadian .bottom .right .boxr{
+    height:143px;
+}
+.jiadian .bottom .right .boxr2{
+    margin-top:14px;
+}
+
+.jiadian .bottom .right1 .box a{
+    display:block;
+    width:100%;
+    height:auto;
+    overflow:hidden;
+}
+.jiadian .bottom .right1 .box .text1{
+    height:20px;
+    width:64px;
+    background-color:#83C44E;
+    text-align: center;
+    line-height: 20px;
+    font-size:12px;
+    color:white;
+    margin:0 auto;
+    white-space:nowrap;  
+    overflow:hidden;    
+    text-overflow:ellipsis; 
+}
+.jiadian .bottom .right1 .box .tu{
+   display:block;
+    margin:15px auto 20px;
+}
+.jiadian .bottom .right1 .box .text2{
+    height:21px;
+    width:214px;
+    text-align: center;
+    line-height: 21px;
+    font-size:14px;
+    color: #333333;
+    margin:0 auto;
+    white-space:nowrap;  
+    overflow:hidden;    
+    text-overflow:ellipsis; 
+}
+.jiadian .bottom .right1 .box .text3{
+    height:18px;
+    width:214px;
+    text-align: center;
+    line-height: 18px;
+    font-size:12px;
+    color: #b0b0b0;
+    margin:1px auto;
+    white-space:nowrap;  
+    overflow:hidden;    
+    text-overflow:ellipsis; 
+}
+.jiadian .bottom .right1 .box .text4{
+    height:16px;
+    margin:10px auto 0px;
+    text-align: center;
+    line-height: 16px;
+    font-size:14px;
+    color:#ff6700;
+    white-space:nowrap;  
+    overflow:hidden;    
+    text-overflow:ellipsis; 
+}
+.jiadian .bottom .right1 .box .text4 s{
+    color:#b0b0b0;
+}
+.jiadian .bottom .right1 .boxd img{
+    display:block;
+    float:right;
+    margin:30px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*热评*/
 .rep{
     margin:0 auto;
@@ -1481,17 +1609,54 @@ text-overflow:ellipsis;
     line-height:39px;
     text-align:center;
     border-top: 1px solid #f5f5f5;
+    position:relative;
+
 }
-.gud .box:hover .iconfont{
+/* .gud .box:hover .iconfont{
     color:#ff6700;
+} */
+.gud .box .you{
+    color:#ff6700 !important;
 }
-.gud .box a{
+.gud .box>span{
     display:block;
     width:100%;
     height:100%;
-}
-.gud .box .iconfont{
     font-size:20px;
     color:#757575;
 }
-
+/* .gud .box .iconfont{
+    font-size:20px;
+    color:#757575;
+} */
+.gud .box .zuohua{
+    position: absolute;
+    right: 33px;
+    top: 0;
+    background-color: #fff;
+    display: none;
+}
+.gud .box .wenzi{
+    width: 74px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    font-size: 12px;
+    top: 5px;
+    overflow: hidden;
+    color: #424242;
+}
+.gud .box .zuohua span{
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-left-color: #fff ;
+    position: absolute;
+    right: -10px;
+    z-index: 10;
+    top: 10px;
+}
+.gud .box .shopzh .zuohua{
+    width: 95px;
+}

@@ -3,6 +3,7 @@ window.onload=function(){
 let imglist=document.querySelectorAll(".lunb .imgbox a")
 let dianlist=document.querySelectorAll(".lunb .dian li a")
 let bigbox=document.querySelector(".lunb")
+let jianlist=document.querySelectorAll(".lunb .jian>div")
 let index=0;
 imglist[0].style.opacity=1;
 dianlist[0].classList.add("hot")
@@ -29,22 +30,45 @@ dianlist.forEach((v,i)=>{
         dianlist[i].classList.add("hot")
     }
 })
+jianlist[1].onclick=()=>{
+    move()
+}
+jianlist[0].onclick=()=>{
+    index--
+    if(index<0){index=imglist.length-1}
+    imglist.forEach((v,i)=>{v.style.opacity=0;dianlist[i].classList.remove("hot")})
+    imglist[index].style.opacity=1
+    dianlist[index].classList.add("hot")
+}
+
 
 // 轮播主图左侧选项卡
 let lialist=document.querySelectorAll(".lunb .left .lia")
 let conlist=document.querySelectorAll(".lunb .left .content")
+let bigdhl=document.querySelector(".lunb .left")
 lialist.forEach((v,i)=>{
     v.onmouseover=()=>{
         conlist.forEach((a,b)=>{a.style.display="none";lialist[b].classList.remove("hot1")})
         v.classList.add("hot1");
         conlist[i].style.display="block"
     }
-    v.onmouseout=()=>{
-        v.classList.remove("hot1");conlist[i].style.display="none"
+    // v.onmouseout=()=>{
+    //     v.classList.remove("hot1");conlist[i].style.display="none"
+    // }
+})
+conlist.forEach((v,i)=>{
+    v.onmouseover=()=>{
+        lialist.forEach((a,b)=>{a.classList.remove("hot1") ;conlist[b].style.display="none";})
+        lialist[i].classList.add("hot1");
+        v.style.display="block";
     }
 })
-
-
+bigdhl.onmouseout=()=>{
+    conlist.forEach((v,i)=>{
+        lialist[i].classList.remove("hot1");
+        v.style.display="none";
+    })
+}
 
 //导航栏选项卡  
 let bigl=document.querySelector(".logw .textcon")
@@ -62,6 +86,29 @@ dhlist.forEach((v,i)=>{
     }
 
 })
+
+
+
+//右侧导航选项卡
+let ydlist=document.querySelectorAll(".gud .box>span")
+let yclist=document.querySelectorAll(".gud .box .zuohua")
+ydlist[1].classList.add("you")
+ydlist.forEach((v,i)=>{
+    v.onmouseover=function(){
+        yclist.forEach((a,b)=>{
+            a.style.display="none"
+            ydlist[b].classList.remove("you")
+        })
+        yclist[i].style.display="block"
+        v.classList.add("you")
+    }
+    v.onmouseout=()=>{
+        v.classList.remove("you");yclist[i].style.display="none"
+    }
+
+})
+
+
 
 
 
